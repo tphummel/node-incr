@@ -1,4 +1,4 @@
-# node-autoinc
+# node-incr
 
 [![Build Status](https://travis-ci.org/tphummel/node-incr.png)](https://travis-ci.org/tphummel/node-incr)
 
