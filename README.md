@@ -4,6 +4,8 @@
 
 [![NPM](https://nodei.co/npm/incr.png?downloads=true)](https://nodei.co/npm/incr/)
 
+[![testling badge](https://ci.testling.com/tphummel/node-incr.png)](https://ci.testling.com/tphummel/node-incr)
+
 a counter that will return decimal integers starting at 1 by default. optionally start the counter at another number and/or use a different radix
 
 # install
