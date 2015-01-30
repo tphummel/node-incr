@@ -18,26 +18,26 @@ a counter that will return decimal integers starting at 1 by default. optionally
 
 # usage
 
-    var Increment = require("incr");
+    var Increment = require("incr")
 
-    var inc = new Increment();
-    console.log(inc.next()); // 1
-    console.log(inc.next()); // 2
-    console.log(inc.next()); // 3
-    inc.reset();
-    console.log(inc.next()); // 1
+    var inc = new Increment()
+    console.log(inc.next()) // 1
+    console.log(inc.next()) // 2
+    console.log(inc.next()) // 3
+    inc.reset()
+    console.log(inc.next()) // 1
 
-    var inc = new Increment({start: 10});
-    console.log(inc.next()); // 11
-    console.log(inc.next()); // 12
-    console.log(inc.next()); // 13
+    var inc = new Increment({start: 10})
+    console.log(inc.next()) // 11
+    console.log(inc.next()) // 12
+    console.log(inc.next()) // 13
 
-    var inc = new Increment({radix: 36});
-    console.log(inc.next()); // "1"
-    console.log(inc.next()); // "2"
-    console.log(inc.next()); // "3"
+    var inc = new Increment({radix: 36})
+    console.log(inc.next()) // "1"
+    console.log(inc.next()) // "2"
+    console.log(inc.next()) // "3"
 
-    var inc = new Increment({start: 20, radix: 36});
-    console.log(inc.next()); // "l"
-    console.log(inc.next()); // "m"
-    console.log(inc.next()); // "n"
+    var inc = new Increment({start: 20, radix: 36})
+    console.log(inc.next()) // "l"
+    console.log(inc.next()) // "m"
+    console.log(inc.next()) // "n"

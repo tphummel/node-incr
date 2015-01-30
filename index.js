@@ -1,31 +1,31 @@
+module.exports = Increment
+
 function Increment (opts) {
-  opts = opts ? opts : {};
+  opts = opts ? opts : {}
 
-  this.radix = opts.radix || 10;
-  this.start = opts.start || 0;
+  this.radix = opts.radix || 10
+  this.start = opts.start || 0
 
-  this.position = this.start;
+  this.position = this.start
 
-  return this;
+  return this
 }
 
 Increment.prototype.next = function(){
-  this.position += 1;
+  this.position += 1
 
   if(this.radix !== 10){
-    return this.position.toString(this.radix);
+    return this.position.toString(this.radix)
   }else{
-    return this.position;
+    return this.position
   }
 }
 
 Increment.prototype.reset = function(){
   if(this.position > 0){
-    this.position = 0;
-    return true;
+    this.position = 0
+    return true
   }else{
-    return false;
+    return false
   }
 }
-
-module.exports = Increment;
